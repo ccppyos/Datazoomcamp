@@ -32,3 +32,12 @@ WHEN NOT MATCHED THEN
 If the data exists, we do nothing.
 
 
+
+New defintions
+
+DML => Data manipulation language
+DDL  => Data definition language
+DCL = > Data control language
+
+Datawarehouse: cleaned processed data
+Datalake: raw data
