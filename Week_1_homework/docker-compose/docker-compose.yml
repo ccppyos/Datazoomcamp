@@ -8,13 +8,17 @@ services:
     ports:
       - "5433:5432"
     volumes:
-      - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
+      - postgres-data:/var/lib/postgresql/data
+      #- "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
   pgadmin:
     image: dpage/pgadmin4
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=password
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - "./config/pgadmin-config:/var/lib/pgadmin:rw"
+volumes:
+  postgres-data:
+  pgadmin:
