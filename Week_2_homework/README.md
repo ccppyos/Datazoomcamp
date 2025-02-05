@@ -1,6 +1,4 @@
-#In this section
-
-I have learned how to make an orchestration using kestra.
+In this section I have learned how to make an orchestration using kestra.
 
 Relevant points for me are:
 
@@ -33,7 +31,7 @@ If the data exists, we do nothing.
 
 
 
-New defintions
+New defintions:
 
 DML => Data manipulation language
 DDL  => Data definition language
